@@ -1,6 +1,7 @@
 from textSummarizer.constants import *
 from textSummarizer.utils.common import read_yaml, create_directories
-from textSummarizer.entity import(DataIngestionConfig)
+from textSummarizer.entity import (DataIngestionConfig)
+
 
 class ConfigurationManager:
     def __init__(
@@ -12,6 +13,9 @@ class ConfigurationManager:
         self.params = read_yaml(params_filepath)
 
         create_directories([self.config.artifacts_root])
+
+    
+
     def get_data_ingestion_config(self) -> DataIngestionConfig:
         config = self.config.data_ingestion
 
