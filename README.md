@@ -1,4 +1,4 @@
-# Text-Summarizer-Project
+# Text-Summarizer For Medical reports-Project 
 
 ## work flows
 
